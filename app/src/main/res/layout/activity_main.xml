@@ -3,110 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/activity_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="НАЖМИ!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="31dp">
+        app:layout_constraintVertical_bias="0.434" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text2"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.114" />
 
-        <Button
-            android:id="@+id/load_button"
-            android:layout_width="214dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextTextPassword2"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/teal_700"
-            android:minHeight="50dp"
-            android:text="@string/button_login"
-            tools:layout_editor_absoluteX="158dp"
-            tools:layout_editor_absoluteY="331dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сброс"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
 
-        <Button
-            android:id="@+id/save_button"
-            android:layout_width="215dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextTextPassword2"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="99dp"
-            android:backgroundTint="@color/teal_700"
-            android:minHeight="50dp"
-            android:text="@string/button_save"
-            tools:layout_editor_absoluteX="158dp"
-            tools:layout_editor_absoluteY="331dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press!"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
 
-        <Button
-            android:id="@+id/delete_button"
-            android:layout_width="212dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextTextPassword2"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="154dp"
-            android:backgroundTint="@color/design_default_color_error"
-            android:minHeight="50dp"
-            android:text="@string/button_delete"
-            tools:layout_editor_absoluteX="158dp"
-            tools:layout_editor_absoluteY="331dp" />
-
-        <EditText
-            android:id="@+id/emailid"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="100dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="-2dp"
-            android:layout_marginEnd="100dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="162dp"
-            android:text="Email" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/emailid"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="10dp"
-            android:text="Password" />
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
