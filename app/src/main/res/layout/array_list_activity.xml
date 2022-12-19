@@ -15,14 +15,14 @@
 
         <EditText
             android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content"
+            android:layout_width="249dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/login1"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="150dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="80dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/word"
@@ -32,13 +32,15 @@
 
         <Button
             android:id="@+id/button1"
-            android:backgroundTint="@color/purple_500"
-            android:layout_width="wrap_content"
+            android:layout_width="251dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextTextPersonName"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/teal_700"
             android:text="@string/add" />
 
         <ListView
@@ -46,23 +48,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/button1"
-            android:layout_marginTop="20dp"
-            />
+            android:layout_marginTop="20dp" />
 
         <Button
             android:id="@+id/button"
-            android:backgroundTint="@color/design_default_color_error"
-            android:layout_width="wrap_content"
+            android:layout_width="251dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextTextPersonName"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/design_default_color_error"
             android:text="Выйти" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/login1"
+            android:layout_width="53dp"
             android:layout_height="wrap_content"
             android:text="email:" />
 

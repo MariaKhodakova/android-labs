@@ -11,32 +11,60 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-90dp">
+        tools:layout_editor_absoluteX="31dp">
 
         <Button
-            android:id="@+id/button2"
-            android:backgroundTint="@color/purple_500"
-            android:layout_width="wrap_content"
+            android:id="@+id/load_button"
+            android:layout_width="214dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextTextPassword2"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="101dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_700"
             android:minHeight="50dp"
-            android:text="@string/button1"
+            android:text="@string/button_login"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPassword2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="99dp"
+            android:backgroundTint="@color/teal_700"
+            android:minHeight="50dp"
+            android:text="@string/button_save"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPassword2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="154dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:minHeight="50dp"
+            android:text="@string/button_delete"
             tools:layout_editor_absoluteX="158dp"
             tools:layout_editor_absoluteY="331dp" />
 
         <EditText
             android:id="@+id/emailid"
-            android:layout_width="wrap_content"
+            android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="98dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="103dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
             android:autofillHints=""
             android:ems="10"
             android:inputType="textEmailAddress"
@@ -45,14 +73,14 @@
 
         <EditText
             android:id="@+id/editTextTextPassword2"
-            android:layout_width="wrap_content"
+            android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView3"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="99dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="101dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="100dp"
             android:autofillHints=""
             android:ems="10"
             android:inputType="textPassword"
@@ -65,8 +93,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="99dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="162dp"
             android:text="Email" />
 
         <TextView
@@ -75,8 +103,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/emailid"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="99dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
             android:text="Password" />
 
     </RelativeLayout>
